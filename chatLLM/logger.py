@@ -8,5 +8,7 @@ logging.basicConfig(
 
 logging.getLogger("socketio").setLevel(logging.ERROR)
 logging.getLogger("engineio").setLevel(logging.ERROR)
+logging.getLogger("geventwebsocket.handler").setLevel(logging.ERROR)
+logging.getLogger("numexpr").setLevel(logging.ERROR)
 
 logger = logging.getLogger("chatllm")
